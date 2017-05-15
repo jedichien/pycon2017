@@ -1,14 +1,25 @@
-# Lib
-1. 'gym[all]'==0.8.1
+This dockerfile is building for nvidia-docker usage, so you have to install following first
+---
+### Requirement
+1. nvidia-driver
+2. nvidia-cuda
+3. docker-ce
+4. nvidia-docker 
 
-2. gym-pull
+### How to use ?
+* run from existing docker image
+python 2.7
+`
+docker run -it --name caigame -p 8888:8888 chienworld/pythcon2017
+`
 
-3. jupyter
+python 3.5
+`
+docker run -it --name caigame -p 8888:8888 chienworld/pythcon2017-py3
+`
 
-4. pandas
+* build from dockerfile
+`
+docker build -t test .
+`
 
-5. matplotlib
-
-6. opencv-python==3.2.0.7
-
-7. keras==2.0.3
