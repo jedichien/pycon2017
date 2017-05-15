@@ -1,5 +1,4 @@
 # Python-2017 Workshop
----
 
 This dockerfile is building for nvidia-docker usage, so you have to install following first
 
