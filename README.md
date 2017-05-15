@@ -19,7 +19,7 @@ docker run -it --name caigame -p 8888:8888 chienworld/pythcon2017-py3
 ```
 
 * build from dockerfile
-`
+```
 docker build -t test .
-`
+```
 
