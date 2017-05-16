@@ -9,17 +9,16 @@ This dockerfile is building for nvidia-docker usage, so you have to install foll
 4. nvidia-docker 
 
 ### How to use ?
-* run from existing docker image
-```
-(python 2.7)
-docker run -it --name caigame -p 8888:8888 chienworld/pythcon2017
-
-(python 3.5)
-docker run -it --name caigame -p 8888:8888 chienworld/pythcon2017-py3
-```
-
+* gpu
+ ```
+ docker run -it --name caigame -p 8888:8888 chienworld/pythcon2017:latest-gpu-py3
+ ```
+* cpu
+ ```
+ docker run -it --name caigame -p 8888:8888 chienworld/pythcon2017:latest-py3
+ ```
 * build from dockerfile
-```
-docker build -t test .
-```
+ ```
+ docker build -t $imgName -f $dockerFile .
+ ```
 
